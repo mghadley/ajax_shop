@@ -1,0 +1,73 @@
+<div class='row'>
+	<nav>
+    <div class="nav-wrapper">
+      <h1 class="brand-logo">DPL Store</h1>
+      <ul id="nav-mobile" class="right">
+        <li><a id='index_link'>See All Products</a></li>
+        <li><a id='new_link'>Add New Product</a></li>
+      </ul>
+    </div>
+  </nav>
+
+	<div id='new' class='container'>
+		<h2>Add new product</h2>
+		<form id='new_form'>
+			<div id='inputs'>
+				<input placeholder='Name' name='product[name]'>
+				<input placeholder='Description' name='product[description]'>
+				<input placeholder='Price' name='product[base_price]'>
+				<input placeholder='Quantity in Stock' name='product[quanity_on_hand]'>
+				<input placeholder='Weight' name='product[weight]'>
+				<input class='other_attr' placeholder='Other Attribute' name='product[other_attributes][]'>
+				<input class='other_attr' placeholder='Other Attribute' name='product[other_attributes][]'>
+				<input class='other_attr' placeholder='Other Attribute' name='product[other_attributes][]'>
+			</div>
+			<button type='submit' class='btn'>Add Product</button>
+		</form>
+	</div>
+
+	<div id='index'>
+		<h3 class='center'>Pick a product</h3>
+		<div id='products' class='container'></div>
+	</div>
+
+	<div id='show' class='container'>
+		<h1 id='show_name'></h1>
+		<h4>Description</h4>
+		<p id='show_description'></p>
+		<p>Price: <span id='show_price'></span></p>
+		<p>Quantity in stock: <span id='show_quantity'></span></p>
+		<p>Weight: <span id='show_weight'></spann></p>
+	</div>
+
+	<div id='update' class='container'>
+		<form id='update_form'>
+			<div>
+				<label>Name</label>
+				<input id='update_name' name='product[name]'>
+			</div>
+			<div>
+				<label>Description</label>
+				<input id='update_description' name='product[description]'>
+			</div>
+			<div>
+				<label>Price</label>
+				<input id='update_price' name='product[base_price]' type='number'>
+			</div>
+			<div>
+				<label>Quantity in Stock</label>
+				<input id='update_quantity' name='product[quanity_on_hand]'>
+			</div>
+			<div>
+				<label>Weight</label>
+				<input id='update_weight' name='product[weight]'>
+			</div>
+			<div>
+				<label>Other attributes</label>
+				<input id='update_other' name='product[other_attributes]'>
+			</div>
+			<br>
+			<button type='submit' class='btn'>Update Product</button>
+		</form>
+	</div>
+</div>
